@@ -21,7 +21,7 @@ from ui_text import UI_TEXT
 # PAGE CONFIG
 # ------------------------------------------------------------------
 st.set_page_config(
-    page_title="AI Investigation Note Quality Assistant",
+    page_title="TinaAI – AI Transaction Investigation Note Assistant",
     page_icon="🔍",
     layout="wide",
 )
@@ -235,7 +235,7 @@ def _render_stored_result(stored: dict, T: dict) -> None:
             st.write(stored["base_text"])
 
 
-st.title("AI Investigation Note Quality Assistant")
+st.title("TinaAI – AI Transaction Investigation Note Assistant")
 st.subheader(T["subheader"])
 
 tab1, tab2 = st.tabs([T["tab1"], T["tab2"]])
