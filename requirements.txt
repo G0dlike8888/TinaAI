@@ -1,0 +1,13 @@
+# Runtime dependencies for the Streamlit demo (03 Demo/app.py).
+# Pinned to the exact versions the project was verified against
+# (90 offline tests passing, pip check clean, Python 3.14).
+# Needs Python 3.10+ (streamlit and pytest below require it).
+streamlit==1.61.1
+anthropic==0.121.0
+
+# Test dependencies (offline suite in tests/ — no API key, no network).
+# httpx is used directly by the tests to construct SDK error objects; it is
+# also a transitive dependency of the anthropic SDK today, but is declared
+# here so the suite does not depend on that staying true.
+pytest==9.1.1
+httpx==0.28.1

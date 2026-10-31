@@ -1,0 +1,12 @@
+# Project-local Streamlit configuration. Safe to commit — contains no
+# credentials (the API key lives only in the git-ignored secrets.toml).
+
+[browser]
+# No telemetry: this project sends nothing anywhere except the analysis
+# request the user explicitly triggers.
+gatherUsageStats = false
+
+[server]
+# Do not watch the pinned contract files for changes; the app verifies them
+# on every run instead.
+folderWatchBlacklist = ["../01 Contract", "../02 Skill", "../04 Evidence and Records"]

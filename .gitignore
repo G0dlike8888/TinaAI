@@ -1,0 +1,40 @@
+# --- Secrets — never commit a credential -------------------------------
+# The Streamlit secrets file holds the personal Anthropic API key.
+# Only the real file is ignored; the committed secrets.toml.example
+# (placeholder, no key-like value) documents the expected shape.
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+.env
+.env.*
+
+# --- Python virtual environments ---------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python caches / build artifacts -----------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.pytest-tmp/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# --- Editor / OS noise --------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+.claude/settings.local.json

@@ -1,0 +1,19 @@
+# Preserve required LF line endings for contract-integrity verification
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.txt text eol=lf
+*.skill binary
+
+# Windows launcher scripts must reach users as CRLF, including in
+# GitHub zip/archive downloads (cmd.exe can misparse LF-only .bat files)
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Extensionless tracked text files, so their endings do not depend on
+# each machine's core.autocrlf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+LICENSE text eol=lf
