@@ -1,5 +1,7 @@
 # TinaAI – AI Transaction Investigation Note Assistant
 
+[![CI](https://github.com/G0dlike8888/TinaAI/actions/workflows/ci.yml/badge.svg)](https://github.com/G0dlike8888/TinaAI/actions/workflows/ci.yml)
+
 **The context.** Banks, payment institutions and other fintech companies run transaction
 monitoring and fraud-detection systems. When a rule fires (for example an unusual transfer
 pattern, a card used in two countries within an hour, or many small payments just under a
@@ -53,6 +55,9 @@ python -m pytest
 90 offline tests: no API key, no network, no cost. They cover contract integrity and tampering,
 input limits, request construction against a mocked client, error mapping, secret scanning,
 bilingual text parity, evidence-figure fidelity and rendered UI flows (Streamlit AppTest).
+
+GitHub Actions runs the same suite on Ubuntu and Windows on every push and pull request
+(`.github/workflows/ci.yml`).
 
 ## Modules
 
