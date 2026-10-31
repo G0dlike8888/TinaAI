@@ -30,9 +30,9 @@ coordination; and reviews by other models (Qwen, KAT, DeepSeek, Gemini, Kimi) be
 architecture decision. The exam document describes each module, the key prompts, the tests and
 a tool comparison.
 
-TinaAI is the public name of the project. Inside the app, the contract and the Skill the product
-keeps its original name, "AI Investigation Note Quality Assistant", because those files are
-hash-pinned and tested.
+TinaAI is the public name of the project and the title shown in the app. Inside the contract and
+the Skill the product keeps its original name, "AI Investigation Note Quality Assistant", because
+those files are hash-pinned and tested.
 
 ## What makes this project substantive
 
